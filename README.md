@@ -8,6 +8,8 @@ git clone https://github.com/tojonirina/nodejs-ejs.git
 cd nodejs-ejs/
 cd src/
 npm install
+npx sequelize db:create
+npx sequelize db:migrate
 npm start
 ```
 It will be running in [http://localhost:8080/](http://localhost:8080/)
