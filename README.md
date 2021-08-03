@@ -10,4 +10,4 @@ cd src/
 npm install
 npm start
 ```
-It will be running in [localhost:8080](localhost:8080)
+It will be running in [http://localhost:8080/](http://localhost:8080/)
