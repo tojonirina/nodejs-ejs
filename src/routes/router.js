@@ -4,7 +4,8 @@ let AppController = require('../controllers/AppController');
 
 // Index page route
 ROUTE.route('/')
-.get(AppController.index);
+.get(AppController.index)
+.post(AppController.post);
 
 
 // Export all route
