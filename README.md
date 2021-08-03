@@ -1,1 +1,1 @@
-# nodejs-ejs
+# Node.js and EJS App exemple
