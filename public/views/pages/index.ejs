@@ -9,6 +9,48 @@
         <h2> Welcome in my Node.js and EJS tutorial</h2>
     </div>
 
+    <div class="container p-2 content">
+        <form action="/" method="post">
+            <div class="input-group mb-3">
+                <input type="text" name="item" class="form-control" placeholder="Item name" aria-label="Item name" aria-describedby="basic-addon2">
+                <span class="input-group-text p-0" id="basic-addon2"><button class="btn btn-dark p-3">Add</button></span>
+            </div>
+        </form>
+        <hr>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (item of items) { %>
+
+                    <tr>
+                        <td><%= item.item %></td>
+                        <td width="100">
+                            <% if (item.status === false) { %> 
+                                <span class="text-dark">Doing</span>
+                            <% } else { %>
+                                <span class="text-success">Done</span>
+                            <% } %>
+                        </td>
+                        <td width="100">
+                            <% if (item.status === false) { %> 
+                                <form action="items/<%= item.id %>/done" method="post" class="form text-center">
+                                    <button class="btn btn-success">Done</button>
+                                </form>
+                            <% } %>
+                            
+                        </td>
+                    </tr>
+                
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
     <%- include('../components/footer') %>
 </body>
 </html>
