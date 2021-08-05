@@ -14,8 +14,8 @@ npm install
 ```
 - Create database :
 ```sh
-sequelize db:create
-sequelize db:migrate
+sequelize db:create --config src/config/config.json
+sequelize db:migrate --config src/config/config.json --migrations-path src/migrations
 ```
 - Create .env file from .env.exemple and change information if you want
 
