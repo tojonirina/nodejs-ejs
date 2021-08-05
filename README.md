@@ -12,16 +12,4 @@ npx sequelize db:create
 npx sequelize db:migrate
 npm start
 ```
-It will be running in [http://localhost:8080/](http://localhost:8080/)
-
-## Run with docker
-Make sur you have [get-docker](https://docs.docker.com/get-docker/) docker installed on your computer
-
-After cloning the app , go to the nodejs-ejs directory with ```sh cd nodejs-ejs/```and run :
-
-```sh
-docker build -t nodejs-ejs .
-docker run -dp 3030:3030 nodejs-ejs
-```
-
-Go to the http://localhost:3030
+It will be running in [http://localhost:3000/](http://localhost:3000/)
