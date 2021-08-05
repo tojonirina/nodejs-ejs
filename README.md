@@ -17,6 +17,8 @@ npm install
 sequelize db:create
 sequelize db:migrate
 ```
+- Create .env file from .env.exemple and change information if you want
+
 - Start the application
 ```sh
 npm start
