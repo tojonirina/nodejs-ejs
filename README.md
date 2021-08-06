@@ -23,4 +23,4 @@ sequelize db:migrate --config src/config/config.json --migrations-path src/migra
 ```sh
 npm start
 ```
-It will be running in [http://localhost:3000/](http://localhost:3000/)
+The app will be running in [http://localhost:3000/](http://localhost:3000/)
